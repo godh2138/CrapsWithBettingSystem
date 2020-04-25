@@ -1,6 +1,6 @@
-# Author:  Rudy Faile
-# Version: 4.2.0
-# Date:    08/02/17
+# Author: Dong Hyun Go
+# Version: 4.2.1
+# Date:    2020.04.25
 # License: MIT
 
 import random

@@ -1,16 +1,16 @@
 def ask_yes_no(question):
     response = None
 
-    expected_responses = ('no', 'n', 'yes', 'y')
+    expected_responses = ('o','x')
 
     while response not in expected_responses:
         response = input(question + "\n").lower()
 
         # Error message
         if response not in expected_responses:
-            print('Wrong input please <yes/no>')
+            print('Wrong input please <o or x>')
 
-    return response == 'yes' or response == 'y'
+    return response == 'o' 
 
 
 def ask_for_value(question):

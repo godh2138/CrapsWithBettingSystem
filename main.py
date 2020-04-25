@@ -58,7 +58,7 @@ class Game:
         self.__current_wager = bet
 
         input("Press any key to roll the dice.")
-        self.__point = ascii_dice.dice()
+        self.__point = ascii_dice.card()
 
         print('The roll is:', self.__point)
 
@@ -106,7 +106,7 @@ class Game:
                 # TODO: put something here to not let them be able to bet more than they have in the bank
 
     def streaming_roll(self):
-        stream = ascii_dice.dice()
+        stream = ascii_dice.card()
 
         if stream == self.__point:
             print("Winner! You Rolled the __point of", self.__point)

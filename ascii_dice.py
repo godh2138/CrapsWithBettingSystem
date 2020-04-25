@@ -1,55 +1,86 @@
 import time
 import random
 
-dice1 = """
+card1 = """
 __________
-| 1       |
 |         |
-|    O	  |
+|         |
+|   1	  |
 |         |
 |_________|"""
 
-dice2 = """
+card2 = """
 __________
-| 2       |
-|      O  |
-|    	  |
-|  O      |
+|         |
+|         |
+|   2 	  |
+|         |
+|________ |"""
+
+card3 = """
+__________
+|         |
+|         |
+|    3	  |
+|         |
 |_________|"""
 
-dice3 = """
+card4 = """
 __________
-| 3       |
-|      O  |
-|    O	  |
-|  O      |
+|         |
+|         |
+|    4	  |
+|         |
 |_________|"""
 
-dice4 = """
+card5 = """
 __________
-| 4       |
-|  O   O  |
-|    	  |
-|  O   O  |
+|         |
+|         |
+|   5     |
+|         |
 |_________|"""
 
-dice5 = """
+card6 = """
 __________
-| 5       |
-|  O   O  |
-|    O	  |
-|  O   O  |
+|         |
+|         |
+|    6    |
+|         |
 |_________|"""
 
-dice6 = """
+card7 = """
 __________
-|6        |
-|  O   O  |
-|  O   O  |
-|  O   O  |
+|         |
+|         |
+|    7    |
+|         |
 |_________|"""
 
-dice_list = (dice1, dice2, dice3, dice4, dice5, dice6)
+card8 = """
+__________
+|         |
+|         |
+|    8    |
+|         |
+|_________|"""
+card9 = """
+__________
+|         |
+|         |
+|    9    |
+|         |
+|_________|"""
+card10 = """
+__________
+|         |
+|         |
+|    10   |
+|         |
+|_________|"""
+
+
+card_list = (card1,card2,card3,card4,card5,card6,card7,card8,card9,card10)
 
 # Seconds that the dice animation will be shown
 animation_duration_time = 10
@@ -63,12 +94,12 @@ def roll_dice():
 
 time.sleep(1)
 
-def dice():
-        die1 = random.randint(1, 6)
-        die2 = random.randint(1, 6)
-        dice = die1 + die2
-        print("You roll a", die1, "and", die2, "for a total of", dice)
-        print(dice_list[die1 - 1])
-        print(dice_list[die2 - 1], '\n')
+def card():
+        die1 = random.randint(1, 10)
+        die2 = random.randint(1, 10)
+        card = die1 + die2
+        print("You roll a", die1, "and", die2, "for a total of", card)
+        print(card_list[die1 - 1])
+        print(card_list[die2 - 1], '\n')
 
-        return dice
+        return card

@@ -70,7 +70,7 @@ def dice():
         die1 = random.randint(1, 6)
         die2 = random.randint(1, 6)
         dice = die1 + die2
-        print("You roll a", die1, "and", die2, "for a total of", dice)
+        print("맨 처음 굴린 주사위 숫자", die1, "그리고", die2, "주사위 값의 합", dice)
         print(dice_list[die1 - 1])
         print(dice_list[die2 - 1], '\n')
 

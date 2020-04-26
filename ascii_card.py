@@ -1,3 +1,4 @@
+
 import time
 import random
 
@@ -5,7 +6,7 @@ card1 = """
 __________
 |        |
 |    1   |
-|    	 |
+|    ��	 |
 |        |
 |________|"""
 
@@ -95,10 +96,11 @@ def roll_card():
 time.sleep(1)
 
 def card():
-        die1 = random.randint(1, 10)
-        die2 = random.randint(1, 10)
-        card = die1 + die2
-        print("You roll a", die1, "and", die2, "for a total of", card)
-        print(card_list[die1 - 1])
-        print(card_list[die2 - 1], '\n')
+        card1 = random.randint(1, 10)
+        card2 = random.randint(1, 10)
+        card = card1 + card2
+       
+        print("You roll a", card1, "and", card2, "for a total of", card)
+        print(card_list[card1 - 1])
+        print(card_list[card2 - 1], '\n')
 

@@ -1,3 +1,4 @@
+
 def ask_yes_no(question):
     response = None
 

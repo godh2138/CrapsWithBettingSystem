@@ -4,7 +4,7 @@
 # License: MIT
 
 import random
-import ascii_dice
+import ascii_card
 import ask_user as au
 
 class Game:
@@ -38,9 +38,7 @@ class Game:
             #TODO: rules don't work
             input("Press any key to continue.")
         else:
-            print("\n1. Place a bet.\r\n2. Roll the dice.\r\n3. Get a 7 or 11, you win, get a 2, 3, or 12, you lost, "
-                  "game over.\r\n4. Any other number, that's your point.\r\n5. Keep rolling until...\r\n6. ...you "
-                  "repeat your point, and you win, game over.\r\n7. ...you get a 7, and you lost, game over.\n")
+                  ("repeat your point, and you win, game over.\r\n7. ...you get a 7, and you lost, game over.\n")
 
         print('You have been assigned an initial bankroll of $1,000, good luck!')
 
@@ -57,8 +55,8 @@ class Game:
 
         self.__current_wager = bet
 
-        input("Press any key to roll the dice.")
-        self.__point = ascii_dice.card()
+        input("Press any key to roll the .")
+        self.__point = ascii_card.card()
 
         print('The roll is:', self.__point)
 
@@ -84,7 +82,7 @@ class Game:
         take_odds = au.ask_yes_no("Take odds? (o or x) : ")
         if not take_odds:
             self.__odds_amount = 0
-            input("Press any key to roll the dice.")
+            input("Press any key to roll the .")
             self.streaming_roll()
         else:
             print("How much you would like would you like to bet behind your",
@@ -106,7 +104,7 @@ class Game:
                 # TODO: put something here to not let them be able to bet more than they have in the bank
 
     def streaming_roll(self):
-        stream = ascii_dice.card()
+        stream = ascii_card.card()
 
         if stream == self.__point:
             print("Winner! You Rolled the __point of", self.__point)

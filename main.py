@@ -34,7 +34,7 @@ class Game:
     @staticmethod
     def rules():
 
-        if not au.ask_yes_no("Would you like to see the rules? (Yes/No)"):
+        if not au.ask_yes_no("Would you like to see the rules? (o/x)"):
             #TODO: rules don't work
             input("Press any key to continue.")
         else:

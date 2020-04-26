@@ -81,7 +81,7 @@ class Game:
         print("The __point is:", self.__point)
         print("Would you like to Take odds on your", self.__point, "?")
 
-        take_odds = au.ask_yes_no("Take odds? (yes or no) : ")
+        take_odds = au.ask_yes_no("Take odds? (o or x) : ")
         if not take_odds:
             self.__odds_amount = 0
             input("Press any key to roll the dice.")

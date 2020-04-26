@@ -4,10 +4,10 @@ import random
 card1 = """
 __________
 |         |
-|         |
-|   1	  |
-|         |
-|_________|"""
+|    ¡Ü    |
+|    ¡Ü	  |
+|    ¡Ü   |
+|________|"""
 
 card2 = """
 __________
@@ -37,7 +37,7 @@ card5 = """
 __________
 |         |
 |         |
-|   5     |
+|    5     |
 |         |
 |_________|"""
 
@@ -83,7 +83,7 @@ __________
 card_list = (card1,card2,card3,card4,card5,card6,card7,card8,card9,card10)
 
 # Seconds that the dice animation will be shown
-animation_duration_time = 10
+animation_duration_time = 20
 time_end = time.time() + animation_duration_time
 
 

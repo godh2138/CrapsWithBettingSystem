@@ -9,14 +9,14 @@ import ask_user as au
 
 class Game:
     # Attributes
-    __bank_roll = 1000
+    __bank_roll = 2000
     __current_wager = 0
     __lost = False
     __point = 0
     __odds_amount = 0
     __keep_playing = True
 
-    def __init__(self, __bank_roll=1000):  # We may add an option to choose initial money later
+    def __init__(self, __bank_roll=2000):  # We may add an option to choose initial money later
         self.Game = Game
         self.__bank_roll = __bank_roll
 

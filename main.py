@@ -60,15 +60,15 @@ class Game:
         input("Press any key to roll the .")
         self.__point = ascii_card.card()
 
-        print('The roll is:', self.__point)
+        print('The card is:', self.__point)
 
-        if self.__point == 2 or self.__point == 3 or self.__point == 12:
+        if self.__point == 2 or self.__point == 3 or self.__point == 12 or self.__point==8:
             print("Craps,", self.__point, "Craps... Line Away.")
             self.__bank_roll = self.__bank_roll - self.__current_wager
             print("You lost your bet of $", self.__current_wager,
                   "and now have a total of $", self.__bank_roll)
 
-        elif self.__point == 7 or self.__point == 11:
+        elif self.__point == 7 or self.__point == 11 or self.__point ==4:
             print("Winner,", self.__point, "!! Pay the Line!")
             self.__bank_roll = self.__bank_roll + self.__current_wager
             print("You Win your bet of $", self.__current_wager,
@@ -100,7 +100,7 @@ class Game:
                 self.__odds_amount = __odds_amount
                 self.streaming_roll()
 
-        self.keep_playing()
+        #self.keep_playing()
 
     
                 # TODO: put something here to not let them be able to bet more than they have in the bank

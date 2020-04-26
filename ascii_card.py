@@ -38,7 +38,7 @@ card5 = """
 __________
 |         |
 |         |
-|    5     |
+|    5    |
 |         |
 |_________|"""
 
@@ -103,4 +103,6 @@ def card():
         print("You roll a", card1, "and", card2, "for a total of", card)
         print(card_list[card1 - 1])
         print(card_list[card2 - 1], '\n')
+        
+        return card
 

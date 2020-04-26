@@ -38,7 +38,7 @@ class Game:
             #TODO: rules don't work
             input("Press any key to continue.")
         else:
-            print("\n1. Place a bet.\r\n2. Roll the dice.\r\n3. Get a 4, 7 or 11, you win, get a 2, 3,8 or 12, you lost, "
+            print("\n1. Place a bet.\r\n2. shuffle the dice.\r\n3. Get a 4, 7 or 11, you win, get a 2, 3,8 or 12, you lost, "
                   "game over.\r\n4. Any other number, that's your point.\r\n5. Keep rolling until...\r\n6. ...you "
                   "repeat your point, and you win, game over.\r\n7. ...you get a 7, and you lost, game over.\n")
 

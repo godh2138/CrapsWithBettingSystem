@@ -33,12 +33,14 @@ class Game:
 
     @staticmethod
     def rules():
-
+       
         if not au.ask_yes_no("Would you like to see the rules? (o/x)"):
             #TODO: rules don't work
             input("Press any key to continue.")
         else:
-                  ("repeat your point, and you win, game over.\r\n7. ...you get a 7, and you lost, game over.\n")
+            print("\n1. Place a bet.\r\n2. Roll the dice.\r\n3. Get a 4, 7 or 11, you win, get a 2, 3,8 or 12, you lost, "
+                  "game over.\r\n4. Any other number, that's your point.\r\n5. Keep rolling until...\r\n6. ...you "
+                  "repeat your point, and you win, game over.\r\n7. ...you get a 7, and you lost, game over.\n")
 
         print('You have been assigned an initial bankroll of $1,000, good luck!')
 
@@ -98,7 +100,7 @@ class Game:
                 self.__odds_amount = __odds_amount
                 self.streaming_roll()
 
-        #self.keep_playing()
+        self.keep_playing()
 
     
                 # TODO: put something here to not let them be able to bet more than they have in the bank

@@ -6,7 +6,7 @@
 import random
 import ascii_card
 import ask_user as au
-
+import ascii_card as ac
 class Game:
     # Attributes
     __bank_roll = 2000
@@ -58,7 +58,7 @@ class Game:
         self.__current_wager = bet
 
         input("Press any key to roll the .")
-        self.__point = ascii_card.card()
+        self.__point = ac.card()
 
         print('The card is:', self.__point)
 

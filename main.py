@@ -58,7 +58,7 @@ class Game:
 
         self.__current_wager = bet
 
-        input("Press any key to roll the .")
+        input("Press any key to change the cards .")
         self.__point = ac.card()
 
         print('The card is:', self.__point)
@@ -86,7 +86,7 @@ class Game:
         if not take_odds:
             self.__odds_amount = 0
             input("Press any key to roll the .")
-            self.streaming_roll()
+            self.streaming_card()
         else:
             print("How much you would like would you like to bet behind your",
                   self.__point, "? (Up to 5x): ")
@@ -99,18 +99,18 @@ class Game:
                 self.second_phase()
             else:
                 self.__odds_amount = __odds_amount
-                self.streaming_roll()
+                self.streaming_card()
 
         #self.keep_playing()
 
     
                 # TODO: put something here to not let them be able to bet more than they have in the bank
 
-    def streaming_roll(self):
+    def streaming_card(self):
         stream = ascii_card.card()
 
         if stream == self.__point:
-            print("Winner! You Rolled the __point of", self.__point)
+            print("Winner! You get the __point of", self.__point)
             print("You win your initial bet of", self.__current_wager,
                   "plus your odds bet of $", self.__odds_amount)
             self.odds(self.__point)
@@ -131,8 +131,8 @@ class Game:
             print("Total Bankroll: $", self.__bank_roll)
             input("Press Any Key to Continue.")
         else:
-            input("Press any key to roll again.")
-            self.streaming_roll()
+            input("Press any key to change the cards again.")
+            self.streaming_card()
 
     def check_broke(self):
         if self.__bank_roll <= 0:
@@ -146,6 +146,7 @@ class Game:
 
         if au.ask_yes_no("Would You like to play again?"):
             exit(0)
+            
             game = Game()
             game.start()
         else:

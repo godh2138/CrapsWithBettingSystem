@@ -32,4 +32,5 @@ def ask_for_value(question):
     return answer
 
 def ask_to_keep_playing():
-    return ask_yes_no("Do you want to keep playing?")
+   
+    return ask_yes_no("Do you want to keep playing? you try:")

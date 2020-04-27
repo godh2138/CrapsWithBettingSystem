@@ -1,6 +1,6 @@
-# Author:  Rudy Faile
-# Version: 4.2.0
-# Date:    08/02/17
+# Author:  Dong hyun GO
+# Version: 4.2.1
+# Date:    20.04.27
 # License: MIT
 
 import random
@@ -26,6 +26,7 @@ class Game:
         while(self.__keep_playing):
             self.come_out_roll()
             self.keep_playing()
+   
 
     @staticmethod
     def welcome():

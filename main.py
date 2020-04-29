@@ -31,10 +31,11 @@ class Game:
     @staticmethod
     def welcome():
         print("***Welcome to Craps***")
-
+        
+       
     @staticmethod
     def rules():
-       
+      
         if not au.ask_yes_no("Would you like to see the rules? (o/x)"):
             #TODO: rules don't work
             input("Press any key to continue.")
@@ -167,5 +168,6 @@ class Game:
         self.__keep_playing = au.ask_to_keep_playing()
         if not self.__keep_playing:
             print('Thanks for playing! See ya!')
+            print(' If you have time, please give me stars')
             exit(0)
             

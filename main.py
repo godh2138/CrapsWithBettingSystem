@@ -31,7 +31,7 @@ class Game:
     @staticmethod
     def welcome():
         print("***Welcome to Craps***")
-        
+        level=input('select level   1: Level1    2: Level2')
        
     @staticmethod
     def rules():

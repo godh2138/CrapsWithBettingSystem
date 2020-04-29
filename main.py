@@ -22,7 +22,9 @@ class Game:
 
     def start(self):
         self.welcome()
+        
         self.rules()
+        self.level()
         while(self.__keep_playing):
             self.come_out_roll()
             self.keep_playing()
@@ -31,7 +33,10 @@ class Game:
     @staticmethod
     def welcome():
         print("***Welcome to Craps***")
-        level=input('select level   1: Level1    2: Level2')
+    @staticmethod
+    def level():
+        
+        level=input("what level do you want? choose 1, 2") 
        
     @staticmethod
     def rules():
@@ -44,7 +49,7 @@ class Game:
                   "game over.\r\n4. Any other number, that's your point.\r\n5. Keep rolling until...\r\n6. ...you "
                   "repeat your point, and you win, game over.\r\n7. ...you get a 7, and you lost, game over.\n")
 
-        print('You have been assigned an initial bankroll of $1,000, good luck!')
+        print('You have been assigned an initial bankroll of $1,000, good luck! your level is 1')
 
     def come_out_roll(self):
         self.check_broke()
